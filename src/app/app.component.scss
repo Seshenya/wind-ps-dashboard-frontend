@@ -1,0 +1,42 @@
+.heading1{
+    text-align: center;
+    margin-top: -80px;
+    margin-left: 50px;
+    font-family: Cambria;
+    color: rgb(32, 11, 28);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.wrapper{
+    .wrapper-top{
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      .wrapper-top-left{
+        flex-grow: 1;
+        margin-top: -84px; 
+      }
+    }
+    .wrapper-bottom{
+      display: flex;
+      align-items:center;
+      margin-top: -70px;
+      .wrapper-bottom-div{
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .flex-group-1 {
+    flex-basis: 10%;
+  }
+
+  .flex-group-2 {
+    flex-basis: 30%;
+    
+  }
+
+  .flex-group-3 {
+    flex-basis: 50%;
+  }

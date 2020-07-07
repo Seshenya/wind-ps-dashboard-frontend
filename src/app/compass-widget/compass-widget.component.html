@@ -1,0 +1,41 @@
+<div class="parent-circle">
+  <div class="container-circle">
+    <div #circle class='circle' (mousedown)="drawing = true">
+      <div class="compass">
+        <div class="glass"></div>
+        <div style="color:rgba(228, 13, 13, 0.685);">
+          <span class="north">N</span>
+          <span class="east">E</span>
+          <span class="south">S</span>
+          <span class="west">W</span>
+        </div>
+        <ul class="measure" style="color:white;">
+          <li class="twenty-measure">20</li>
+          <li class="fourty-measure">40</li>
+          <li class="sixty-measure">60</li>
+          <li class="eighty-measure">80</li>
+          <li class="one-hundred-measure">100</li>
+          <li class="one-hundred-and-twenty-measure">120</li>
+          <li class="one-hundred-and-fourty-measure">140</li>
+          <li class="one-hundred-and-sixty-measure">160</li>
+          <li class="two-hundred-measure">200</li>
+          <li class="two-hundred-and-twenty-measure">220</li>
+          <li class="two-hundred-and-fourty-measure">240</li>
+          <li class="two-hundred-and-sixty-measure">260</li>
+          <li class="two-hundred-and-eighty-measure">280</li>
+          <li class="three-hundred-measure">300</li>
+          <li class="three-hundred-and-twenty-measure">320</li>
+          <li class="three-hundred-and-fourty-measure">340</li>
+        </ul>
+
+        <div class="pointer" [style]="styleRotate">
+          <div class="arrow up"></div>
+          <div class="center"></div>
+          <div class="arrow down"></div>
+        </div>
+      </div>
+      <div #dot class='dot' [style]="styleRotate"></div>
+    </div>
+
+  </div>
+</div>

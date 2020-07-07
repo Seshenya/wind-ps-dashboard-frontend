@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+
+    <title></title>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="wrapper">
+            <div class="wrapper-top">
+                <div class="wrapper-top-left">
+                    <div>
+                        <img src="../assets/logo-v1.png" style="width:150px; height:100%" />
+                        <p class="heading1" style="text-align:center; ">Wind Power Station Monitoring Platform</p>
+                    </div>
+                </div>
+                <div class="wrapper-top-right">
+                    <app-clock-widget *ngIf="windPScurrentValue" [windPScurrentValue]="windPScurrentValue">
+                    </app-clock-widget>
+
+                </div>
+            </div>
+            <div class="wrapper-bottom">
+                <div class="wrapper-bottom-div flex-group-1">
+                    <app-compass-widget *ngIf="windPScurrentValue" [windPScurrentValue]="windPScurrentValue">
+                    </app-compass-widget>
+
+                </div>
+                <div class="wrapper-bottom-div flex-group-2">
+                    <app-gauge-widget *ngIf="windPScurrentValue" [windPScurrentValue]="windPScurrentValue">
+                    </app-gauge-widget>
+                </div>
+                <div class="wrapper-bottom-div flex-group-3">
+                    <app-graph-widget *ngIf="windPSdata" [windPSdata]="windPSdata"></app-graph-widget>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
